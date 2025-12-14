@@ -1,0 +1,197 @@
+/* Main container */
+.UserPageMain {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* UserPage wrapper vertical layout */
+.UserPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+/* Container adjustments */
+.UserPage .container-fluid {
+    max-width: 770px;
+    width: 100%;
+    padding: 0.5rem 0 0 0;
+}
+
+/* Row spacing */
+.UserPage .row {
+    margin-bottom: 0.5rem;
+}
+
+.UserPage .row:last-child {
+    margin-bottom: 0;
+}
+
+/* Center align columns */
+.UserPage .col-md-12,
+.UserPage .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+/* UserPageCard1 Styling - BIO Section */
+.userPageCard1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.userPageCard1 .main-card {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 1.25rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-height: 350px;
+}
+
+.userPageCard1 .main-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.userPageCard1 .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.userPageCard1 .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.userPageCard1 .info-label {
+    font-size: 1rem;
+    font-weight: 700 !important;/*overriding default style*/
+    letter-spacing: 1px;
+    color: #343a40 !important;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.userPageCard1 .info-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Small Cards Styling - Stats */
+.UserPage .card {
+    width: 100%;
+    max-width: 100% !important;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: white;
+}
+
+.UserPage .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.UserPage .card-body {
+    padding: 1.25rem 1.25rem;
+    text-align: center;
+}
+
+.UserPage .card-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.UserPage .card-text {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Links styling */
+.UserPage a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    text-align: center;
+    border: none;
+}
+
+.UserPage a:hover {
+    background-color: #0b5ed7;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.UserPage a:active {
+    transform: translateY(0);
+}
+
+/* Back to Home link */
+.UserPage .row:last-child a {
+    background-color: white;
+    color: #212529;
+    border: 1px solid #e0e0e0;
+}
+
+.UserPage .row:last-child a:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Stats row spacing */
+.UserPage .row:nth-child(2) {
+    margin-bottom: 0.5rem;
+}
+
+.UserPage .row:nth-child(2) .col-md-4 {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {/*medium and below*/
+    .UserPage {
+        padding: 1rem;
+    }
+
+    .UserPage .container-fluid {
+        max-width: 100%;
+    }
+
+    .userPageCard1 .main-card {
+        padding: 1.5rem;
+    }
+
+    .UserPage .card-body {
+        padding: 1.5rem 1rem;
+    }
+
+    .UserPage .card-title {
+        font-size: 2rem;
+    }
+}

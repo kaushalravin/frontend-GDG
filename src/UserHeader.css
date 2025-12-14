@@ -1,0 +1,32 @@
+.UserHeader{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.UserHeader h1,.UserHeader p{
+    
+    margin-bottom:18px;
+}
+
+.UserHeader h1{
+    margin-top:1.5em;
+    font-weight:600 ;
+    font-size: 3.5rem;
+}
+.UserHeader p{
+    
+   font-size:1.2em; 
+    
+}
+
+.muted{
+    background-color: #f0efef;
+    padding-left:1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
+    border-radius: 1em;
+
+}

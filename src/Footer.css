@@ -1,0 +1,16 @@
+/* Footer Styles */
+.app-footer {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    margin-top:2rem;
+}
+
+.app-footer p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
